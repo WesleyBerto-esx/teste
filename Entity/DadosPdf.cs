@@ -3,17 +3,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace functions.Entity
 {
-    [Table("PdfData")]
     public class PdfData
     {
-        [Key]
-        public int Id { get; set; }
-        public string Empresa { get; set; }
-        public string Nota { get; set; }
-        public string FilePath { get; set; }
+        public string MunicipioNFS { get; set; }
+        public string Prefeitura { get; set; }
+        public string NumeroNFS { get; set; }
+        public string ChaveAcesso { get; set; }
+        public string DataEmissao { get; set; }
+        public string DataCompetencia { get; set; }
+        public string SerieDPS { get; set; }
+        public string EmitenteNome { get; set; }
+        public string EmitenteCNPJ { get; set; }
+        public string ValorServico { get; set; }
+        public string ValorDesconto { get; set; }
 
-        public DateTimeOffset DataCriacao { get; set; }
 
-        public string Content { get; set; }
     }
 }

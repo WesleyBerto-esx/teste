@@ -1,84 +1,73 @@
-using FunctionApp2.Services;
-using functions.Data.Repository;
-using functions.Entity;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
+using Microsoft.Azure.Functions.Worker.Http;
+using YourNamespace.Services;
+using System.Threading.Tasks;
+using FunctionApp2.Services;
+using financeiroFunctions.Entidades;
+using functions.Entity;
+using Newtonsoft.Json;
+using System.IO;
 
-namespace functions.Functions
+public class PostPdfFunction
 {
-    public class PostPdfFunction
+    private readonly IExtractFromPdf _extractFromPdf;
+    private readonly OpenAiService _openAiService;
+    private readonly ILogger<PostPdfFunction> _logger;
+
+    public PostPdfFunction(IExtractFromPdf extractFromPdf, OpenAiService openAiService, ILogger<PostPdfFunction> logger)
     {
-        public static List<PdfData> dadosArmazenados = new List<PdfData>();
-        private readonly ILogger<PostPdfFunction> _logger;
-        private readonly PdfService _pdfService;
-        private readonly FileService _fileService;
-        private readonly ValidationService _validationService;
-        private readonly PdfRepository _pdfRepository;
+        _extractFromPdf = extractFromPdf;
+        _openAiService = openAiService;
+        _logger = logger;
+    }
 
-        public PostPdfFunction(
-            ILogger<PostPdfFunction> logger,
-            PdfRepository pdfRepository,
-            PdfService pdfService,
-            FileService fileService,
-            ValidationService validationService
-            )
+    [Function("PostPdf")]
+    public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequestData req)
+    {
+        HttpResponseData response;
+
+        try
         {
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _pdfService = pdfService;
-            _fileService = fileService;
-            _validationService = validationService;
-        }
-
-        [Function("PostPdf")]
-        public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "pdf/upload")] HttpRequest req)
-        {
-            _logger.LogInformation("Iniciando o armazenamento de dados.");
-
-            var empresa = req.Form["empresa"].ToString();
-            var nota = req.Form["nota"].ToString();
-            var pdfFile = req.Form.Files["file"];
-
-            if (string.IsNullOrEmpty(empresa) || string.IsNullOrEmpty(nota) || pdfFile == null)
+            byte[] pdfData;
+            using (var memoryStream = new MemoryStream())
             {
-                return new BadRequestObjectResult("Dados incompletos. Empresa, nota e arquivo são obrigatórios.");
+                await req.Body.CopyToAsync(memoryStream);
+                pdfData = memoryStream.ToArray();
             }
 
-            if (!pdfFile.ContentType.Equals("application/pdf"))
+            string jsonData = _extractFromPdf.ExtractPdfDataAsJson(new MemoryStream(pdfData));
+
+            if (string.IsNullOrEmpty(jsonData))
             {
-                return new BadRequestObjectResult("O arquivo deve ser um PDF.");
+                _logger.LogError("Falha ao converter o PDF para JSON.");
+                response = req.CreateResponse(System.Net.HttpStatusCode.BadRequest);
+                await response.WriteStringAsync("Erro: Não foi possível extrair dados do PDF.");
+                return response;
             }
 
-            var storageDirectory = Path.Combine(Path.GetTempPath(), "pdfs");
-            var filePath = _fileService.SaveFile(pdfFile.OpenReadStream(), pdfFile.FileName, storageDirectory);
-            string pdfContent = _pdfService.ExtractTextFromPdf(filePath);
+            PdfData pdfDataObj = JsonConvert.DeserializeObject<PdfData>(jsonData);
 
-            var (razaoSocial, numeroNota) = _pdfService.ExtractDataFromPdf(pdfContent);
+            _logger.LogInformation("Razao Social: " + pdfDataObj.EmitenteNome);
+            _logger.LogInformation("CNPJ: " + pdfDataObj.EmitenteCNPJ);
+            _logger.LogInformation("Número da Nota: " + pdfDataObj.NumeroNFS);
+            _logger.LogInformation("CNAE: " + pdfDataObj.SerieDPS);
+            _logger.LogInformation("Valor: " + pdfDataObj.ValorServico);
+            _logger.LogInformation("Prefeitura: " + pdfDataObj.Prefeitura);
+            _logger.LogInformation("Município: " + pdfDataObj.MunicipioNFS);
 
-            //if (!_validationService.ValidatePdfData(pdfContent, "caminho/do/seu/excel.xlsx"))
-            //{
-            //    return new BadRequestObjectResult("Os dados do PDF não correspondem aos dados do Excel.");
-            //}
+      
+            response = req.CreateResponse(System.Net.HttpStatusCode.OK);
+            await response.WriteStringAsync(jsonData);
 
-            string novoNomeArquivo = $"{numeroNota}_{razaoSocial.Replace(" ", "_").ToUpper()}.pdf";
-            var novoCaminhoArquivo = _fileService.RenameFile(filePath, novoNomeArquivo);
-
-            var novoRegistro = new PdfData
-            {
-                Empresa = empresa,
-                Nota = nota,
-                FilePath = novoCaminhoArquivo,
-                Content = pdfContent
-            };
-
-             await _pdfRepository.AddPdfDataAsync(novoRegistro);
-            _logger.LogInformation($"Empresa: {novoRegistro.Empresa}, Nota: {novoRegistro.Nota}");
-
-            return new OkObjectResult("Dados e arquivo PDF armazenados com sucesso.");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Erro na função PostPdf: {ex.Message}");
+            response = req.CreateResponse(System.Net.HttpStatusCode.InternalServerError);
+            await response.WriteStringAsync("Erro interno ao processar o PDF.");
         }
 
-       
+        return response;
     }
 }

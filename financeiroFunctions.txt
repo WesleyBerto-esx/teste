@@ -1,0 +1,404 @@
+Folder PATH listing
+Volume serial number is 1A53-004A
+C:.
+¦   .gitignore
+¦   financeiroFunctions.csproj
+¦   financeiroFunctions.sln
+¦   financeiroFunctions.txt
+¦   Function1.cs
+¦   host.json
+¦   local.settings.json
+¦   Program.cs
+¦   
++---.github
+¦   +---workflows
++---.vs
+¦   +---financeiroFunctions
+¦   ¦   +---config
+¦   ¦   ¦       applicationhost.config
+¦   ¦   ¦       
+¦   ¦   +---DesignTimeBuild
+¦   ¦   ¦       .dtbcache.v2
+¦   ¦   ¦       
+¦   ¦   +---FileContentIndex
+¦   ¦   ¦       18459b48-d3fa-48b8-8eda-21f7a20b9c10.vsidx
+¦   ¦   ¦       1915405f-1395-4dd2-8d21-2e71c5e07e5e.vsidx
+¦   ¦   ¦       309cffb9-e2ad-4335-8b42-d46aa170c3c1.vsidx
+¦   ¦   ¦       a35761ce-b7d3-4034-b5cf-ff3bc7666fcc.vsidx
+¦   ¦   ¦       aeaca16d-1d54-49da-85bb-46dc22297193.vsidx
+¦   ¦   ¦       
+¦   ¦   +---v17
+¦   ¦           .futdcache.v2
+¦   ¦           DocumentLayout.backup.json
+¦   ¦           DocumentLayout.json
+¦   ¦           
+¦   +---ProjectEvaluation
+¦   ¦       financeirofunctions.metadata.v9.bin
+¦   ¦       financeirofunctions.projects.v9.bin
+¦   ¦       financeirofunctions.strings.v9.bin
+¦   ¦       
+¦   +---sd
+¦       +---8c9e2b2e-c4db-4bee-8153-ad70b1919507
++---bin
+¦   +---Debug
+¦       +---net8.0
+¦           ¦   Azure.Core.dll
+¦           ¦   Azure.Identity.dll
+¦           ¦   BouncyCastle.Cryptography.dll
+¦           ¦   extensions.json
+¦           ¦   financeiroFunctions.deps.json
+¦           ¦   financeiroFunctions.dll
+¦           ¦   financeiroFunctions.exe
+¦           ¦   financeiroFunctions.pdb
+¦           ¦   financeiroFunctions.runtimeconfig.json
+¦           ¦   functions.metadata
+¦           ¦   Google.Protobuf.dll
+¦           ¦   Grpc.Core.Api.dll
+¦           ¦   Grpc.Net.Client.dll
+¦           ¦   Grpc.Net.ClientFactory.dll
+¦           ¦   Grpc.Net.Common.dll
+¦           ¦   host.json
+¦           ¦   Humanizer.dll
+¦           ¦   itextsharp.dll
+¦           ¦   local.settings.json
+¦           ¦   Microsoft.AI.DependencyCollector.dll
+¦           ¦   Microsoft.AI.EventCounterCollector.dll
+¦           ¦   Microsoft.AI.PerfCounterCollector.dll
+¦           ¦   Microsoft.AI.ServerTelemetryChannel.dll
+¦           ¦   Microsoft.AI.WindowsServer.dll
+¦           ¦   Microsoft.ApplicationInsights.dll
+¦           ¦   Microsoft.ApplicationInsights.WorkerService.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.ApplicationInsights.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.Core.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.Extensions.Abstractions.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.Extensions.Http.dll
+¦           ¦   Microsoft.Azure.Functions.Worker.Grpc.dll
+¦           ¦   Microsoft.Bcl.AsyncInterfaces.dll
+¦           ¦   Microsoft.CodeAnalysis.CSharp.dll
+¦           ¦   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+¦           ¦   Microsoft.CodeAnalysis.dll
+¦           ¦   Microsoft.CodeAnalysis.Workspaces.dll
+¦           ¦   Microsoft.Data.SqlClient.dll
+¦           ¦   Microsoft.EntityFrameworkCore.Abstractions.dll
+¦           ¦   Microsoft.EntityFrameworkCore.Design.dll
+¦           ¦   Microsoft.EntityFrameworkCore.dll
+¦           ¦   Microsoft.EntityFrameworkCore.Relational.dll
+¦           ¦   Microsoft.EntityFrameworkCore.SqlServer.dll
+¦           ¦   Microsoft.Extensions.Caching.Memory.dll
+¦           ¦   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+¦           ¦   Microsoft.Extensions.DependencyInjection.dll
+¦           ¦   Microsoft.Extensions.DependencyModel.dll
+¦           ¦   Microsoft.Extensions.Logging.Abstractions.dll
+¦           ¦   Microsoft.Extensions.Logging.ApplicationInsights.dll
+¦           ¦   Microsoft.Extensions.Logging.dll
+¦           ¦   Microsoft.Extensions.Options.dll
+¦           ¦   Microsoft.Identity.Client.dll
+¦           ¦   Microsoft.Identity.Client.Extensions.Msal.dll
+¦           ¦   Microsoft.IdentityModel.Abstractions.dll
+¦           ¦   Microsoft.IdentityModel.JsonWebTokens.dll
+¦           ¦   Microsoft.IdentityModel.Logging.dll
+¦           ¦   Microsoft.IdentityModel.Protocols.dll
+¦           ¦   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+¦           ¦   Microsoft.IdentityModel.Tokens.dll
+¦           ¦   Microsoft.SqlServer.Server.dll
+¦           ¦   Microsoft.Win32.SystemEvents.dll
+¦           ¦   Mono.TextTemplating.dll
+¦           ¦   System.ClientModel.dll
+¦           ¦   System.CodeDom.dll
+¦           ¦   System.Composition.AttributedModel.dll
+¦           ¦   System.Composition.Convention.dll
+¦           ¦   System.Composition.Hosting.dll
+¦           ¦   System.Composition.Runtime.dll
+¦           ¦   System.Composition.TypedParts.dll
+¦           ¦   System.Configuration.ConfigurationManager.dll
+¦           ¦   System.Diagnostics.PerformanceCounter.dll
+¦           ¦   System.Drawing.Common.dll
+¦           ¦   System.IdentityModel.Tokens.Jwt.dll
+¦           ¦   System.Memory.Data.dll
+¦           ¦   System.Runtime.Caching.dll
+¦           ¦   System.Security.Cryptography.ProtectedData.dll
+¦           ¦   System.Security.Permissions.dll
+¦           ¦   System.Windows.Extensions.dll
+¦           ¦   worker.config.json
+¦           ¦   
+¦           +---.azurefunctions
+¦           ¦       function.deps.json
+¦           ¦       Microsoft.Azure.Functions.Worker.Extensions.dll
+¦           ¦       Microsoft.Azure.Functions.Worker.Extensions.pdb
+¦           ¦       Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader.dll
+¦           ¦       Microsoft.Azure.WebJobs.Host.Storage.dll
+¦           ¦       Microsoft.WindowsAzure.Storage.dll
+¦           ¦       
+¦           +---cs
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---de
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---es
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---fr
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---it
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---ja
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---ko
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---pl
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---pt-BR
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---ru
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---runtimes
+¦           ¦   +---unix
+¦           ¦   ¦   +---lib
+¦           ¦   ¦       +---net6.0
+¦           ¦   ¦               Microsoft.Data.SqlClient.dll
+¦           ¦   ¦               System.Drawing.Common.dll
+¦           ¦   ¦               
+¦           ¦   +---win
+¦           ¦   ¦   +---lib
+¦           ¦   ¦       +---net6.0
+¦           ¦   ¦               Microsoft.Data.SqlClient.dll
+¦           ¦   ¦               Microsoft.Win32.SystemEvents.dll
+¦           ¦   ¦               System.Diagnostics.PerformanceCounter.dll
+¦           ¦   ¦               System.Drawing.Common.dll
+¦           ¦   ¦               System.Runtime.Caching.dll
+¦           ¦   ¦               System.Security.Cryptography.ProtectedData.dll
+¦           ¦   ¦               System.Windows.Extensions.dll
+¦           ¦   ¦               
+¦           ¦   +---win-arm
+¦           ¦   ¦   +---native
+¦           ¦   ¦           Microsoft.Data.SqlClient.SNI.dll
+¦           ¦   ¦           
+¦           ¦   +---win-arm64
+¦           ¦   ¦   +---native
+¦           ¦   ¦           Microsoft.Data.SqlClient.SNI.dll
+¦           ¦   ¦           
+¦           ¦   +---win-x64
+¦           ¦   ¦   +---native
+¦           ¦   ¦           Microsoft.Data.SqlClient.SNI.dll
+¦           ¦   ¦           
+¦           ¦   +---win-x86
+¦           ¦       +---native
+¦           ¦               Microsoft.Data.SqlClient.SNI.dll
+¦           ¦               
+¦           +---tr
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---zh-Hans
+¦           ¦       Microsoft.CodeAnalysis.CSharp.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.resources.dll
+¦           ¦       Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦           ¦       
+¦           +---zh-Hant
+¦                   Microsoft.CodeAnalysis.CSharp.resources.dll
+¦                   Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+¦                   Microsoft.CodeAnalysis.resources.dll
+¦                   Microsoft.CodeAnalysis.Workspaces.resources.dll
+¦                   
++---Data
+¦       AppDbContext.cs
+¦       
++---Entity
+¦       DadosPdf.cs
+¦       
++---Functions
+¦       GetPdf.cs
+¦       PostPdf.cs
+¦       
++---obj
+¦   ¦   financeiroFunctions.csproj.nuget.dgspec.json
+¦   ¦   financeiroFunctions.csproj.nuget.g.props
+¦   ¦   financeiroFunctions.csproj.nuget.g.targets
+¦   ¦   functions.Data.EntityFrameworkCore.targets
+¦   ¦   project.assets.json
+¦   ¦   project.nuget.cache
+¦   ¦   
+¦   +---Debug
+¦       +---net8.0
+¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+¦           ¦   apphost.exe
+¦           ¦   extensions.json
+¦           ¦   financei.6C6B67C7.Up2Date
+¦           ¦   financeiroFunctions.AssemblyInfo.cs
+¦           ¦   financeiroFunctions.AssemblyInfoInputs.cache
+¦           ¦   financeiroFunctions.assets.cache
+¦           ¦   financeiroFunctions.csproj.AssemblyReference.cache
+¦           ¦   financeiroFunctions.csproj.BuildWithSkipAnalyzers
+¦           ¦   financeiroFunctions.csproj.CoreCompileInputs.cache
+¦           ¦   financeiroFunctions.csproj.FileListAbsolute.txt
+¦           ¦   financeiroFunctions.dll
+¦           ¦   financeiroFunctions.GeneratedMSBuildEditorConfig.editorconfig
+¦           ¦   financeiroFunctions.genruntimeconfig.cache
+¦           ¦   financeiroFunctions.GlobalUsings.g.cs
+¦           ¦   financeiroFunctions.pdb
+¦           ¦   financeiroFunctions.sourcelink.json
+¦           ¦   functions.metadata
+¦           ¦   worker.config.json
+¦           ¦   
+¦           +---ref
+¦           ¦       financeiroFunctions.dll
+¦           ¦       
+¦           +---refint
+¦           ¦       financeiroFunctions.dll
+¦           ¦       
+¦           +---WorkerExtensions
+¦               ¦   WorkerExtensions.csproj
+¦               ¦   
+¦               +---buildout
+¦               ¦   ¦   Microsoft.AspNetCore.Authentication.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Authentication.Core.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Authorization.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Authorization.Policy.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Hosting.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Http.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Http.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Http.Extensions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Http.Features.dll
+¦               ¦   ¦   Microsoft.AspNetCore.JsonPatch.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Mvc.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Mvc.Core.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Mvc.WebApiCompatShim.dll
+¦               ¦   ¦   Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Routing.Abstractions.dll
+¦               ¦   ¦   Microsoft.AspNetCore.Routing.dll
+¦               ¦   ¦   Microsoft.AspNetCore.WebUtilities.dll
+¦               ¦   ¦   Microsoft.Azure.Functions.Worker.Extensions.deps.json
+¦               ¦   ¦   Microsoft.Azure.Functions.Worker.Extensions.dll
+¦               ¦   ¦   Microsoft.Azure.Functions.Worker.Extensions.pdb
+¦               ¦   ¦   Microsoft.Azure.WebJobs.dll
+¦               ¦   ¦   Microsoft.Azure.WebJobs.Extensions.dll
+¦               ¦   ¦   Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader.dll
+¦               ¦   ¦   Microsoft.Azure.WebJobs.Extensions.Http.dll
+¦               ¦   ¦   Microsoft.Azure.WebJobs.Host.dll
+¦               ¦   ¦   Microsoft.Azure.WebJobs.Host.Storage.dll
+¦               ¦   ¦   Microsoft.DotNet.PlatformAbstractions.dll
+¦               ¦   ¦   Microsoft.Extensions.Configuration.Abstractions.dll
+¦               ¦   ¦   Microsoft.Extensions.Configuration.Binder.dll
+¦               ¦   ¦   Microsoft.Extensions.Configuration.dll
+¦               ¦   ¦   Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+¦               ¦   ¦   Microsoft.Extensions.Configuration.FileExtensions.dll
+¦               ¦   ¦   Microsoft.Extensions.Configuration.Json.dll
+¦               ¦   ¦   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+¦               ¦   ¦   Microsoft.Extensions.DependencyInjection.dll
+¦               ¦   ¦   Microsoft.Extensions.DependencyModel.dll
+¦               ¦   ¦   Microsoft.Extensions.FileProviders.Abstractions.dll
+¦               ¦   ¦   Microsoft.Extensions.FileProviders.Physical.dll
+¦               ¦   ¦   Microsoft.Extensions.FileSystemGlobbing.dll
+¦               ¦   ¦   Microsoft.Extensions.Hosting.Abstractions.dll
+¦               ¦   ¦   Microsoft.Extensions.Hosting.dll
+¦               ¦   ¦   Microsoft.Extensions.Logging.Abstractions.dll
+¦               ¦   ¦   Microsoft.Extensions.Logging.Configuration.dll
+¦               ¦   ¦   Microsoft.Extensions.Logging.dll
+¦               ¦   ¦   Microsoft.Extensions.ObjectPool.dll
+¦               ¦   ¦   Microsoft.Extensions.Options.ConfigurationExtensions.dll
+¦               ¦   ¦   Microsoft.Extensions.Options.dll
+¦               ¦   ¦   Microsoft.Extensions.Primitives.dll
+¦               ¦   ¦   Microsoft.Net.Http.Headers.dll
+¦               ¦   ¦   Microsoft.WindowsAzure.Storage.dll
+¦               ¦   ¦   NCrontab.Signed.dll
+¦               ¦   ¦   Newtonsoft.Json.Bson.dll
+¦               ¦   ¦   Newtonsoft.Json.dll
+¦               ¦   ¦   System.Memory.Data.dll
+¦               ¦   ¦   System.Net.Http.Formatting.dll
+¦               ¦   ¦   
+¦               ¦   +---bin
+¦               ¦           extensions.json
+¦               ¦           function.deps.json
+¦               ¦           Microsoft.Azure.Functions.Worker.Extensions.dll
+¦               ¦           Microsoft.Azure.Functions.Worker.Extensions.pdb
+¦               ¦           Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader.dll
+¦               ¦           Microsoft.Azure.WebJobs.Host.Storage.dll
+¦               ¦           Microsoft.WindowsAzure.Storage.dll
+¦               ¦           
+¦               +---obj
+¦                   ¦   project.assets.json
+¦                   ¦   project.nuget.cache
+¦                   ¦   WorkerExtensions.csproj.nuget.dgspec.json
+¦                   ¦   WorkerExtensions.csproj.nuget.g.props
+¦                   ¦   WorkerExtensions.csproj.nuget.g.targets
+¦                   ¦   
+¦                   +---Release
+¦                       +---net6.0
+¦                           ¦   Microsoft.Azure.Functions.Worker.Extensions.dll
+¦                           ¦   Microsoft.Azure.Functions.Worker.Extensions.pdb
+¦                           ¦   WorkerEx.422953E6.Up2Date
+¦                           ¦   WorkerExtensions.AssemblyInfo.cs
+¦                           ¦   WorkerExtensions.AssemblyInfoInputs.cache
+¦                           ¦   WorkerExtensions.assets.cache
+¦                           ¦   WorkerExtensions.csproj.AssemblyReference.cache
+¦                           ¦   WorkerExtensions.csproj.BuildWithSkipAnalyzers
+¦                           ¦   WorkerExtensions.csproj.CoreCompileInputs.cache
+¦                           ¦   WorkerExtensions.csproj.FileListAbsolute.txt
+¦                           ¦   WorkerExtensions.GeneratedMSBuildEditorConfig.editorconfig
+¦                           ¦   WorkerExtensions.sourcelink.json
+¦                           ¦   
+¦                           +---ref
+¦                           ¦       Microsoft.Azure.Functions.Worker.Extensions.dll
+¦                           ¦       
+¦                           +---refint
+¦                                   Microsoft.Azure.Functions.Worker.Extensions.dll
+¦                                   
++---Properties
+¦       launchSettings.json
+¦       serviceDependencies.json
+¦       serviceDependencies.local.json
+¦       serviceDependencies.local.json.user
+¦       
++---Repository
+¦       PdfRepository.cs
+¦       
++---Service
+        FilerService.cs
+        PdfManipulator.cs
+        ValidationService.cs
+        
